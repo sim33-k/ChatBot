@@ -19,6 +19,11 @@ from src.prompt import (
     SIMPLE_PROMPT_TEMPLATE
 )
 
+from src.store_index import (
+    PineconeIndexManager,
+    create_pinecone_index
+)
+
 __version__ = "0.1.0"
 
 __all__ = [
@@ -38,4 +43,8 @@ __all__ = [
     "MEDICAL_PROMPT_TEMPLATE",
     "DETAILED_PROMPT_TEMPLATE",
     "SIMPLE_PROMPT_TEMPLATE",
+    
+    # Pinecone index management
+    "PineconeIndexManager",
+    "create_pinecone_index",
 ]
